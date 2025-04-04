@@ -1,27 +1,27 @@
 package murray.javasample;
 
-import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.stage.Stage;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
-import java.io.IOException;
+public class LoginController {
 
-public class LoginController extends Application {
+    @FXML
+    private PasswordField passwordID;
 
-    public static void main(String[] args) {
-        launch(args);
+    @FXML
+    private TextField usernameID;
+
+    @FXML
+    void buttonClicked(ActionEvent event) {
+        String username = usernameID.getText();
+        String password = passwordID.getText();
     }
 
-    @Override
-    public void start(Stage primaryStage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login-screen.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        scene.getStylesheets().add(getClass().getResource("Login-Screen.css").toExternalForm());
-        new Image(getClass().getResource("/murray.javasample/login_ui.jpg").toExternalForm());
-        primaryStage.setScene(scene);
-        primaryStage.show();
+    @FXML
+    void linkClicked(ActionEvent event) {
+
     }
+
 }
