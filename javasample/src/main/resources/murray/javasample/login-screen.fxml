@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="murray.javasample.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="murray.javasample.LoginController">
    <children>
       <BorderPane layoutX="44.0" layoutY="50.0" prefHeight="500.0" prefWidth="800.0">
          <left>
@@ -53,7 +53,7 @@
                <children>
                   <ImageView fitHeight="506.0" fitWidth="341.0" layoutY="-1.0" pickOnBounds="true" smooth="false">
                      <image>
-                        <Image url="@login_ui.jpg" />
+                        <Image url="@login_ui.png" />
                      </image>
                   </ImageView>
                </children>
