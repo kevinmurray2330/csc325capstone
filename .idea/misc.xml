@@ -6,11 +6,13 @@
       <list>
         <option value="$PROJECT_DIR$/../TipCalculatorApp/pom.xml" />
         <option value="$PROJECT_DIR$/../TipCalculator/pom.xml" />
+        <option value="$PROJECT_DIR$/../csc325sprint1/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/../JavaSample/pom.xml" />
+        <option value="$PROJECT_DIR$/../TipCalculator/pom.xml" />
       </set>
     </option>
   </component>
