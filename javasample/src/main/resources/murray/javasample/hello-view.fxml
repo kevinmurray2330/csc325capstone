@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="murray.javasample.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="murray.javasample.HelloController"
+      alignment="CENTER" spacing="10"
+      style="-fx-background-color: #f5f5f5; -fx-padding: 20;">
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
+  <Label text="Catering Service Login"
+         style="-fx-font-weight: bold; -fx-font-size: 24; -fx-text-fill: #333;"/>
+
+  <TextField fx:id="emailField" promptText="Email"
+             style="-fx-pref-width: 250px; -fx-pref-height: 35px;"/>
+
+  <PasswordField fx:id="passwordField" promptText="Password"
+                 style="-fx-pref-width: 250px; -fx-pref-height: 35px;"/>
+
+  <Button text="Login" onAction="#handleLogin"
+          style="-fx-pref-width: 250px; -fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+
+  <Button text="Register" onAction="#handleRegister"
+          style="-fx-pref-width: 250px; -fx-background-color: #2196F3; -fx-text-fill: white;"/>
+
+  <Label fx:id="errorLabel" style="-fx-text-fill: red; -fx-font-size: 14;"/>
 </VBox>

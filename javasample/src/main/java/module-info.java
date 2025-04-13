@@ -10,6 +10,8 @@ module murray.javasample {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires google.cloud.firestore;
+    requires firebase.admin;
 
     opens murray.javasample to javafx.fxml;
     exports murray.javasample;

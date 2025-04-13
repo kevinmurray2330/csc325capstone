@@ -36,3 +36,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
+javasample/src/main/resources/murray/javasample/key.json
